@@ -1,6 +1,11 @@
 package me.godlycoder.mc;
 
 import lombok.Getter;
+import me.godlycoder.mc.commands.DemoteCommand;
+import me.godlycoder.mc.commands.PromoteCommand;
+import me.godlycoder.mc.listeners.ChatListener;
+import me.godlycoder.mc.listeners.JoinListener;
+import me.godlycoder.mc.listeners.QuitListener;
 import me.godlycoder.mc.rank.AccountModel;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -13,7 +18,11 @@ public class Rank extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
+        new DemoteCommand(this);
+        new PromoteCommand(this);
+        new ChatListener(this);
+        new JoinListener(this);
+        new QuitListener(this);
     }
 
     @Override
