@@ -1,0 +1,12 @@
+name: Rank
+main: me.godlycoder.mc.Rank
+version: 1.0
+api-version: 1.16.5
+author: GodlyCoder07
+
+commands:
+  promote:
+    description: promotes player
+
+  demote:
+    description: demotes player
