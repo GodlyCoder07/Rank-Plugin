@@ -15,6 +15,7 @@ public class DemoteCommand implements CommandExecutor {
 
     public DemoteCommand(Rank plugin) {
         this.plugin = plugin;
+        Bukkit.getPluginCommand("demote").setExecutor(this);
     }
 
     @Override

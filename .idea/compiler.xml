@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Login System" />
         <module name="Rank" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Login System" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
